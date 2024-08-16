@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Landing page travel</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const promoCards = [
+          {
+            img: "./Assets/assets/praia1.jpg",
+            title: "Angra dos reis",
+            subtitle:
+              "Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.",
+            uf: "RJ",
+          },
+          {
+            img: "./Assets/assets/praia2.jpg",
+            title: "Arraial do cabo",
+            subtitle:
+              "Conecte-se com a natureza em Arraial do Cabo! Nossa pousada está localizada próximo às praias.",
+            uf: "RJ",
+          },
+          {
+            img: "./Assets/assets/praia3.jpg",
+            title: "Treze Tílias",
+            subtitle:
+              "Viva a experiência de um vilarejo europeu no Brasil! Nossa pousada em Treze Tílias é perfeita.",
+            uf: "SC",
+          },
+          {
+            img: "./Assets/assets/praia4.jpg",
+            title: "Ipanema",
+            subtitle:
+              "Explore a rica cultura e história de Ipanema! Nossa pousada é o ponto de partida ideal para conhecer.",
+            uf: "RJ",
+          },
+          {
+            img: "./Assets/assets/praia1.jpg",
+            title: "Angra dos reis",
+            subtitle:
+              "Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.",
+            uf: "RJ",
+          },
+          {
+            img: "./Assets/assets/praia2.jpg",
+            title: "Arraial do cabo",
+            subtitle:
+              "Conecte-se com a natureza em Arraial do Cabo! Nossa pousada está localizada próximo às praias.",
+            uf: "RJ",
+          },
+          {
+            img: "./Assets/assets/praia3.jpg",
+            title: "Treze Tílias",
+            subtitle:
+              "Viva a experiência de um vilarejo europeu no Brasil! Nossa pousada em Treze Tílias é perfeita.",
+            uf: "SC",
+          },
+          {
+            img: "./Assets/assets/praia4.jpg",
+            title: "Ipanema",
+            subtitle:
+              "Explore a rica cultura e história de Ipanema! Nossa pousada é o ponto de partida ideal para conhecer.",
+            uf: "RJ",
+          },
+        ];
+
+        const container = document.getElementById("cardsContainer");
+
+        promoCards.forEach((promoCard) => {
+          const div = document.createElement("div");
+          div.classList.add("card");
+          div.innerHTML = `
+              <img src="${promoCard.img}" width="260px" height="160px" alt="${promoCard.title}">
+              <div class="cardTitles">
+              <h2>${promoCard.title}</h2>
+              <h3>${promoCard.uf}</h3>
+              </div>
+              <h4>${promoCard.subtitle}</h4>
+            `;
+          container.appendChild(div);
+        });
+      });
+    </script>
+  </head>
+  <!-- body -->
+  <body>
+    <header class="header">
+      <div class="headerFlex">
+        <img src="./Assets/assets/logo-branca.png" alt="" />
+        <nav class="headerNav">
+          <a href="#">Hotéis</a>
+          <a href="#">Contato</a>
+          <a href="#">Entrar</a>
+          <a class="headerNav--cadastrar">Cadastrar-se</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="container">
+          <div class="mainTexts">
+            <h1>As melhores hospedagens do Brasil</h1>
+            <h2>
+              mais de 500 mil reservas esperando por você! Basta procurar pelo
+              local ideal, e realizar a viagem dos seus sonhos
+            </h2>
+          </div>
+          <figure>
+            <img
+              style="object-fit: cover; filter: brightness(999)"
+              width="380px"
+              height="330px"
+              src="./Assets/assets/mapa-brasil.png"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+      <article class="articleContainer">
+        <img src="./Assets/assets/icons/local-icon.svg" alt="" />
+        <input placeholder=" Qual o local desejado?" />
+        <img src="./Assets/assets/icons/checkin-icon.svg" alt="" />
+        <input placeholder=" Data check-in" />
+        <img src="./Assets/assets/icons/checkout-icon.svg" alt="" />
+        <input placeholder="icon Data check-out" />
+
+        <button>Procurar hotel</button>
+      </article>
+      <section>
+        <div class="container">
+          <div id="cardsContainer"></div>
+        </div>
+      </section>
+      <section class="lastSection">
+        <div class="container">
+          <div class="lastTexts">
+            <h1>
+              Venha conferir os melhores
+              <span style="color: #002777">hoteis</span> com as melhores
+              <span style="color: #019438">promoções</span> do país
+            </h1>
+            <h2>
+              <span style="color: #019438">Não perca tempo</span> e venha
+              conferir o que há de <span style="color: #ffdf00">melhor</span> na
+              hotelagem brasileira
+            </h2>
+          </div>
+          <figure>
+            <img
+              src="./Assets/assets/travel.png"
+              width="450px"
+              height="380px"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="topFooter">
+        <h1>Fale com um de nossos acessores</h1>
+        <h3>hospedagens@contato.com.br</h3>
+        <h3>(11) 0800-707-0707</h3>
+      </div>
+      <div class="bottomFooter">
+        <img src="./Assets/assets/logo-preta.png" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>

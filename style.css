@@ -1,0 +1,231 @@
+@font-face {
+  font-family: Lato-Regular;
+  src: url(./Assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url(./Assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: Lato-Thin;
+  src: url(./Assets/fonts/Lato/Lato-Thin.ttf);
+}
+@font-face {
+  font-family: Lato-Light;
+  src: url(./Assets/fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(./Assets/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  height: 60px;
+}
+
+.headerFlex {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.headerNav > a {
+  color: white;
+  text-decoration: none;
+  font-family: Lato-Regular;
+}
+
+.headerNav--cadastrar {
+  border: 1px solid white;
+  padding: 8px 30px;
+  border-radius: 8px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  color: white;
+  padding-top: 80px;
+  background: linear-gradient(95.24deg, #1e52b4 -10.53%, #002777 103.54%);
+}
+
+.main > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 435px;
+}
+
+.mainTexts h1 {
+  font-size: 28px;
+  font-family: Lato-Bold;
+}
+
+.mainTexts h2 {
+  font-size: 18px;
+  font-family: Lato-Regular;
+}
+
+.articleContainer {
+  display: flex;
+  color: #4e4b59;
+  align-items: center;
+  height: 80px;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: white;
+  padding: 0 40px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25);
+
+  max-width: 880px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 40px;
+}
+
+.articleContainer input {
+  border: none;
+  outline: none;
+  border-right: 1px dashed #4e4b59;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+}
+
+.articleContainer button {
+  background-color: #009c3b;
+  color: white;
+  margin-left: 20px;
+  border: none;
+  padding: 16px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.articleContainer img {
+  margin-left: 12px;
+}
+
+#cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 260px;
+}
+
+.card h3 {
+  color: #ffdf00;
+  font-size: 16px;
+  font-family: Oswald;
+}
+.card h2 {
+  font-size: 16px;
+}
+.card h4 {
+  font-size: 12px;
+  font-family: Lato-Regular;
+}
+
+.cardTitles {
+  display: flex;
+  justify-content: space-between;
+  font-family: Lato-Bold;
+}
+
+.lastSection .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lastTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 465px;
+}
+
+.lastTexts h1 {
+  font-size: 28px;
+  font-family: Lato-Bold;
+}
+.lastTexts h2 {
+  font-size: 20px;
+  font-family: Lato-Regular;
+}
+
+.footer {
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+
+.topFooter {
+  background: linear-gradient(90deg, #009c3b 0%, #009538 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topFooter h1 {
+  font-family: Lato-Bold;
+  font-size: 24px;
+}
+
+.topFooter h2 {
+  font-family: Lato-Thin;
+  font-size: 16px;
+}
+
+.topFooter h3 {
+  font-family: Lato-Thin;
+  font-size: 16px;
+}
+
+.bottomFooter {
+  color: #2e2736;
+  background-color: #ffdf00;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
